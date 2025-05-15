@@ -1,1 +1,1 @@
-Next question.difference between stack and queue?
+Let's start. How do you handle legacy systems?
