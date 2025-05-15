@@ -1,0 +1,88 @@
+
+
+
+
+.mock-container {
+    text-align: center;
+    padding: 1px 20px;
+    background: linear-gradient(135deg, #95adfc, #5b7ecf);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.mock-container h2 {
+    font-size: 2.5rem;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+}
+
+.company-logos img {
+    width: 175px;
+    height: 170px;
+    object-fit: contain;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-logos img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.start-mock-btn {
+    background: linear-gradient(135deg, #5b7ecf, #95adfc);
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    align-self: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+}
+
+.start-mock-btn:hover {
+    background: linear-gradient(135deg, #3c5eb7, #819df1);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .mock-container h2 {
+        font-size: 2rem;
+    }
+
+    .company-logos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .start-mock-btn {
+        width: 80%;
+        max-width: 300px;
+        font-size: 20px;
+        padding: 14px 24px;
+    }
+}

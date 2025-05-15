@@ -1,0 +1,67 @@
+.templates-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.section-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.templates-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+}
+
+.template-card {
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 350px;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.template-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.template-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #1c1c1c;
+}
+
+.template-desc {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.template-link {
+  color: #0052cc;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.template-link:hover {
+  text-decoration: underline;
+}

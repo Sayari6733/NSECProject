@@ -1,0 +1,77 @@
+
+
+/* Entire page layout */
+.interview-panel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Right panel to hold everything vertically */
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+/* Question box design */
+.question-box {
+    background-color: #f0f8ff;
+    padding: 20px 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+    border-left: 6px solid #0072ff;
+    max-width: 400px;
+    text-align: left;
+}
+
+.question-box h3 {
+    margin: 0 0 8px;
+    color: #0072ff;
+}
+
+/* Video style */
+.user-video {
+    width: 260px;
+    height: 180px;
+    border-radius: 12px;
+    border: 2px solid #0072ff;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Mute button style */
+.mute-btn {
+    padding: 10px 22px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mute-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .interview-panel {
+        justify-content: center;
+    }
+
+    .right-panel {
+        align-items: center;
+    }
+
+    .question-box {
+        text-align: center;
+    }
+}

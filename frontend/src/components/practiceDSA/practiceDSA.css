@@ -1,0 +1,70 @@
+.practicedsa-container {
+  background-color: #5b7ad0;
+  color: #ffffff;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-title {
+  background-color: #1c1c1fde;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.table {
+  background-color: #304990;
+  border-radius: 10px;
+}
+
+.table-header, .table-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #2a2a2e;
+  padding: 0.8rem 1rem;
+}
+
+.table-header {
+  text-align: left;
+  background-color: #16164f;
+  font-weight: bold;
+}
+
+.table-cell {
+  flex: 1;
+}
+
+.status {
+  flex: 0.5; /* Slightly more space for checkbox */
+}
+
+.problem {
+  flex: 1.5; /* Main content gets most space */
+}
+
+.difficulty {
+  flex: 1; /* Just enough for difficulty text */
+}
+
+.easy {
+  color: #00ff84;
+}
+
+.medium {
+  color: #ffc107;
+}
+
+.hard {
+  color: #ff4081;
+}
+
+.key-icon {
+  margin-left: 0.5rem;
+}

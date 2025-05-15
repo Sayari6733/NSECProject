@@ -1,0 +1,198 @@
+
+
+/* Entire container layout */
+.permissions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px; 
+    padding: 50px 30px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #95adfc, #315bbd);
+    /* background: linear-gradient(165deg, #6ec9c9, #66aee6); */
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+}
+/* Company selection card */
+.company-selection {
+    flex: 1;
+    max-width: 350px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    margin-top: 50px;
+    /* New glass border effect */
+    border: 2px solid rgba(196, 237, 255, 0.35);
+}
+
+
+
+.company-selection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(78, 74, 74, 0.3);
+}
+
+.company-selection h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Radio group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.07); /* lighter */
+    border-radius: 14px;
+    transition: background 0.3s, transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.25); /* subtle border */
+    backdrop-filter: blur(10px);
+
+    /* Optional hover glass feel */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+.radio-group label:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 12px;
+    position: relative;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.radio-group input[type="radio"]:checked {
+    border: 6px solid #00e676;
+    background-color: transparent;
+}
+
+/* Permissions section holding both boxes + proceed */
+.permissions-section {
+    margin-top: 100px;
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Each permission box */
+.permission-box {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    border: 2px solid rgba(196, 237, 255, 0.35);
+}
+
+.permission-box h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* Allow / Block buttons */
+.allow, .block {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.allow {
+    background-color: #00e676;
+}
+
+.block {
+    background-color: #ff5252;
+}
+
+.allow:hover {
+    background-color: #00c853;
+}
+
+.block:hover {
+    background-color: #d32f2f;
+}
+
+/* Proceed button */
+.proceed-btn {
+    background: linear-gradient(to right, #00c853, #00e676);
+    color: white;
+    padding: 14px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.proceed-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+    .permissions-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .company-selection, .permissions-section {
+        max-width: 90%;
+    }
+
+    .permission-box h4 {
+        font-size: 16px;
+    }
+
+    .allow, .block {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .proceed-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}

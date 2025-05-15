@@ -1,0 +1,111 @@
+.login-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #cbd5e1, #a78bfa);
+  position: relative;
+  padding: 20px; */
+
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #cbd5e1, #a78bfa);
+  position: relative;
+  padding: 20px;
+  margin-top: -64px; /* ✅ Lifts content up under the sticky navbar */
+
+}
+
+.login-logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.login-card {
+  background-color: #0f172a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  color: #cbd5e1;
+  text-align: center;
+}
+
+.login-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  margin-bottom: 20px;
+  color: #a5b4fc;
+  font-size: 14px;
+}
+
+.login-input {
+  display: flex;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 12px 16px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+.login-input img {
+  margin-right: 12px;
+  width: 20px;
+}
+
+.login-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+}
+
+.forgot-password {
+  color: #818cf8;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #6366f1, #312e81);
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-card button:hover {
+  background: linear-gradient(to right, #4f46e5, #1e1b4b);
+}
+
+.toggle-auth {
+  margin-top: 16px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.toggle-auth span {
+  color: #60a5fa;
+  cursor: pointer;
+  text-decoration: underline;
+}
