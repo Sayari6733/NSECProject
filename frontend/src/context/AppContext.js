@@ -3,7 +3,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
 // ✅ Define backendUrl here directly
-const backendUrl = 'http://localhost:5100';
+const backendUrl = 'http://localhost:5000';
 
 export const AppContent = createContext();
 
