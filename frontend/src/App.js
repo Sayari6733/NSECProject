@@ -9,7 +9,7 @@ import MockInterview from './components/MockInterview/MockInterview';
 import Permissions from './components/Permissions/Permissions';
 //import InterviewPanel from './components/InterviewPanel/InterviewPanel';
 import Header from './components/header/header';
-import InterviewPanel from './components/InterviewSession/interviewPanel';
+import InterviewPanel from './components/InterviewSession/InterviewPanel';
 import Practice from './components/practice/Practice';
 import PracticeCore from './components/practiceCore/PracticeCore';
 import PracticeDSA from './components/practiceDSA/PracticeDSA';
