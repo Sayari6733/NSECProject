@@ -56,7 +56,7 @@ const InterviewPanel = () => {
     
             // 1. Send question
             try {
-                await fetch("http://localhost:5100/send-question", {
+                await fetch("http://localhost:5000/send-question", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -106,7 +106,7 @@ const InterviewPanel = () => {
                 formData.append("audio", audioBlob);
 
                 try {
-                    const response = await fetch("http://localhost:5100/upload-audio", {
+                    const response = await fetch("http://localhost:5000/upload-audio", {
                         method: "POST",
                         body: formData,
                     });
@@ -162,3 +162,5 @@ const InterviewPanel = () => {
 };
 
 export default InterviewPanel;
+
+

@@ -1,1 +1,1 @@
-Let's startwhat is a trie data structure?
+Let's start. How do you handle legacy systems?
